@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>咖啡饮用时间表</title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			a{ 
+				text-decoration: none;
+			}
+			img{
+				vertical-align:middle;/* 居中对齐 */
+			}
+			hr+h2{
+				text-align: center;
+			}
+			
+			
+			/*---网页开始-----*/
+			.main{
+				margin:0 auto;
+				height:auto;
+				overflow:hidden;
+				background:#fdfdfd;
+			}
+			
+			
+			/*---顶部-----*/
+			.header_1{
+				margin-left: 0;
+				height: 80px;
+				background: #bbd2b2;
+			}
+			.header{
+				width: 1300px;
+			}
+			.header>img{
+				margin-right: 20px;
+				margin-left: 10px;
+			}
+			.header>span>a{
+				color: #423b33;
+				font-size: 20px;
+			}
+			.header>span>a:hover{
+				color: #bbd2b2;
+				font-size: 20px;
+			}
+			#abab{
+				width: 300px;
+				color: #423b33;
+				font-size: 12px;
+				margin-right: 600px;
+			}
+			
+			
+			/*---主体-----*/
+			.body_dialog{
+				width: 1100px;
+				position: relative;
+				margin: 40px auto;
+				display:flex;
+				justify-content:space-between; 
+				
+			}
+			.body{
+				margin-top: 10px;
+				border: 5px solid #bbd2b2;
+				margin-right: 100px;
+				width: 800px;
+				text-align: center;
+				background-color: white;
+			}
+			.text{
+				width: 700px;
+				margin: 0 auto;
+			}
+			
+			.flicker{
+					   color:#6c4239; /*设置文字颜色*/
+					   font-weight:bolder; /*设置字体粗细*/
+					    -webkit-animation: flicker 3s infinite;    /*设置动画*/
+					}
+			@-webkit-keyframes flicker{                    
+				0%{
+					color:#6c4239;
+				}
+				25%{
+					opacity: 0.7;
+					color:#6c4239; 
+				}
+				50%{
+					color:#bb7c68; 
+				}
+				75%{
+					opacity: 0.7;
+					color:#6c4239; 
+				}
+				100%
+				{
+					color:#6c4239; 
+				}
+				}
+			
+			
+			/*---目录-----*/
+			.dialog{
+				width: 250px;
+				height: 250px;
+				margin: 40px 0 0 900px;
+				position: fixed;
+				text-align: left;
+				line-height: 30px;
+				background-color: white;
+			}
+			.dialog>ul{
+				margin-left: 15px;
+			}
+			.dialog>ul>li>a{
+				color: #443C36;
+			}
+			h1{
+				line-height: 80px;text-shadow: h-shadow v-shadow blur #153b4f;
+				-webkit-animation:bounce 2s 1;/*设置动画*/
+			}
+			
+			   
+			/*---底部-----*/
+		   .footer{
+			margin-left: 0;
+			height: 270px;
+			background: #bbd2b2;
+		   }
+		   .container{
+			   margin: 0 auto;
+			   display: flex;
+			   width: 1100px;
+		   }
+		   .image{
+			   margin: 50px auto;
+		   }
+		   .line{
+				float:left;
+				margin-top: 40px;
+				width:50px;
+				height: 200px;
+			   	border-right: 2px solid black;
+		   }
+		   .relative{
+			   width: 750px;
+			   font-size: 16px;
+			   line-height: 22px;
+			   letter-spacing: 0.7mm;
+			   margin-top: 30px;
+			   margin-left: 50px;
+			   color: #443C36;
+			   display:inline-block;
+			   font-weight:bold;
+			   -webkit-filter:url(#diff1);
+			   ilter:url(#diff1);
+		   }
+		  
+		   @-webkit-keyframes bounce{/*创建动画*/
+			  0%,100%,20%,50%,80%{
+			  -webkit-transform:translateY(0);
+			  }40%{
+			  -webkit-transform:translateY(-30px);
+			  }60%{
+			  -webkit-transform:translateY(-15px);
+			  }
+		</style>
+	</head>
+	<body>
+	
+	<div class="main">
+		<div class="header_1">
+			<div class="header" id="top">
+				<img src="static/picture/loge.png" height="80px"/>
+				<span id="abab">源自阿拉伯语“قهوة”（意思为“植物饮料”）</span>
+				<span><a class="" href="index.html">返回首页</a></span>
+			</div>
+		</div>
+		<div class="body_dialog">
+			<div class="body">
+				<h1 >咖啡的饮用时间表</h1>
+				<img src="static/picture/图片1.png" width="550px"/>
+				<div class="text">
+				<p><span>1、</span>早&nbsp;7：00-9：00&nbsp;</p>
+				<p>上班路上</p>
+				<p class="flicker">推荐咖啡：卡布奇诺&nbsp;Cappuccino</p>
+				<p>新的一天中第一杯咖啡的最佳选择。</p>
+				<p>轻啜一口，如同裹着柔软的毛毯般，温暖、舒缓和沉静</p>
+				<p>它轻柔地唤醒你，让闲适自由伴你一天。</p>
+				<p>口感丰富的奶泡，温暖你的心情，让你长久品尝，一路上都心情欢畅。</p>
+				<br />
+				
+				<p><span>2、</span>上午11：00-12：00&nbsp;</p>
+				<p>紧张忙碌</p>
+				<p class="flicker">推荐咖啡：意大利咖啡 &nbsp;Espresso</p>
+				<p>怎一个“快”字了得!</p>
+				<p>18~24秒的秒速便可冲出一杯又浓又香的咖啡，与上午高效紧张的工作时间相得益彰。</p>
+				<p>表面浮着一层金黄色泡沫的纯黑咖啡，浓稠滚烫，第一口便陷入无可言喻的魅力中。</p>
+				<p>层层香醇的味觉与丰盈口感能唤醒你的有些昏昏欲睡的神经，就让思考中的大脑像火箭一样，再飞奔一会;</p>
+				<p>让舌尖体会到的浓烈咖啡香味激发出你体内愉悦激情、乐观、自信的情绪，充满活力的开始一天中最紧张、最重要的时刻。</p>
+				<br />
+				
+				<p><span>3、</span>上午11：00-12：00&nbsp;</p>
+				<p>提神醒脑</p>
+				<p class="flicker">推荐咖啡：玛其朵 &nbsp;Macchiato</p>
+				<p>经过上午紧张的工作节奏，还有一个小时才到午休时间，工作还要继续，但是有点点累有点乏力。</p>
+				<p>玛其朵是在接近中午时分振奋精神的最佳选择，如同烈酒一样的后劲十足，</p>
+				<p>让你即使在有点肚饿、乏力的时刻，做出决策时胸有成竹、充满自信。</p>
+				<p>爽滑又略带苦涩的口味，加入少许牛奶，让你在激烈的思考后迅速抚平思绪，重新恢复元气周身充沛精力</p>
+				<br />
+				
+				<p><span>4、</span>中午12:00—13:00 &nbsp;</p>
+				<p>轻松惬意</p>
+				<p class="flicker">推荐咖啡：焦糖咖啡 &nbsp;Caramellato</p>
+				<p>浓情焦糖咖啡给你带来一天里最自在的轻松时刻，让工作日也拥有周末般的轻松。</p>
+				<p>层层叠加的奶油，让好心情无限延续。
+				<p>在忙碌的一天中，让自己逃离片刻，沉迷在只属于你的时间里。</p>
+				<br />
+				
+				<p><span>5、</span>下午13：00-14：00 &nbsp;</p>
+				<p>唤醒慵懒的下午</p>
+				<p class="flicker">推荐咖啡：香草拿铁 &nbsp;Vanilla Latte</p>
+				<p>香草拿铁以咖啡的纯正味道和香草俏皮的活泼唤醒你午饭后昏昏欲睡的大脑,</p>
+				<p>让你精神重新振奋，补充能量，从容准备迎接下午的工作。</p>
+				<p>浓缩咖啡持久浓烈的口感迅速唤醒疲惫的味蕾，</p>
+				<p>身体犹如再换新生一样的斗志满满，开足马力迎接下午的工作。</p>
+				<br />
+				
+				<p><span>6、</span>下午14:00-16:00 &nbsp;</p>
+				<p>会议时间</p>
+				<p class="flicker">推荐咖啡：美式咖啡 &nbsp;Americano</p>
+				<p>一杯不添加牛奶的美式咖啡，苦涩中给你带来几分冷静，最适合会议时的气氛。</p>
+				<p>恰如其分略带苦味的芳香令人振奋，活跃你的思维，让你乐观而又不自大。</p>
+				<p>最纯正的咖啡口感正是你内敛、自信、有涵养的展现，低调的奢华。</p>
+				<br />
+			</div>
+		</div>
+			<div class="dialog">
+				<hr style="border: none; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(141, 200, 140, 0.7), rgba(0, 0, 0, 0));" width="80%" align="center" SIZE=6>
+				<h2>文章目录</h2>
+				<ul>
+					<li><a href="development.html">咖啡发展史</a></li>
+					<li><a href="ingredient.html">咖啡的成分及作用</a></li>
+					<li><a href="types.html">咖啡的种类</a></li>
+					<li><a href="timetable.html">咖啡的饮用时间</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="container" >
+					<div class="image">
+						<img src="static/picture/loge.png" height="150px">
+					</div>
+					<div class="line"></div>
+					<div class="relative">
+						<p>咖啡有一种让人无法抗拒的独特魅力</p>
+						<p>初闻起来味道很香</p>	
+						<p>入口却觉得苦涩中带着酸味</p>
+						<p>而泡沫的破灭和那一点点的苦涩又像是梦想与现实的冲突。</p>
+						<p>在品尝过生活的悲欢之后，生命的香醇回甘又让人陶醉......<span><a href="#top"><img src="static/image/top.png"/></a></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+		
+		
+	</body>
+</html>
