@@ -3,7 +3,252 @@
 	<head>
 		<meta charset="utf-8">
 		<title>咖啡发展史</title>
-	</head>
-	<body>
-	</body>
-</html>
+	<style>
+				body{
+					margin: 0;
+					padding: 0;
+				}
+				a{ 
+					text-decoration: none;
+				}
+				img{
+					vertical-align:middle;/* 居中对齐 */
+				}
+				hr+h2{
+					text-align: center;
+				}
+				
+				
+				/*---网页开始-----*/
+				.main{
+					margin:0 auto;
+					height:auto;
+					overflow:hidden;
+					background:#fdfdfd;
+				}
+				
+				
+				/*---顶部-----*/
+				.header_1{
+					margin-left: 0;
+					height: 80px;
+					background: #bbd2b2;
+				}
+				.header{
+					width: 1300px;
+				}
+				.header>img{
+					margin-right: 20px;
+					margin-left: 10px;
+				}
+				.header>span>a{
+					color: #423b33;
+					font-size: 20px;
+				}
+				.header>span>a:hover{
+					color: #bbd2b2;
+					font-size: 20px;
+				}
+				#abab{
+					width: 300px;
+					color: #423b33;
+					font-size: 12px;
+					margin-right: 600px;
+				}
+				
+				
+				/*---主体-----*/
+				.body_dialog{
+					width: 1100px;
+					position: relative;
+					margin: 40px auto;
+					display:flex;
+					justify-content:space-between; 
+					
+				}
+				.body{
+					margin-top: 10px;
+					border: 5px solid #bbd2b2;
+					margin-right: 100px;
+					width: 800px;
+					text-align: center;
+					background-color: white;
+				}
+				.text{
+					width: 700px;
+					margin: 0 auto;
+					text-align: left;
+					text-indent:2em;
+					line-height: 2.3em;
+					word-spacing: 0.7mm;
+				}
+				.hcqFont{position:relative;letter-spacing:.07em;height: 100px;font-size:3em;font-weight:normal;margin:0 auto}
+				.hcqFont:before,.hcqFont:after{position:absolute;top:0;left:0;right:0}
+				.hcqStyle1{color:hsl(-1, 0%, 100%);text-shadow:0 0 1px currentColor,/*highlight*/-1px -1px 1px hsl(-1, 0%, 100%),0 -1px 1px hsl(10, 47%, 32%),1px -1px 1px hsl(10, 47%, 32%),/*light shadow*/1px 1px 1px hsl(10, 47%, 32%),0 1px 1px hsl(184,80%,10%),-1px 1px 1px hsl(10, 47%, 32%),/*outline*/-2px -2px 1px hsl(10, 47%, 32%),-1px -2px 1px hsl(10, 47%, 32%),0 -2px 1px hsl(10, 47%, 32%),1px -2px 1px hsl(10, 47%, 32%),2px -2px 1px hsl(10, 47%, 32%),2px -1px 1px hsl(10, 47%, 32%),2px 0 1px hsl(184,80%,15%),2px 1px 1px hsl(184,80%,15%),-2px 0 1px hsl(184,80%,15%),-2px -1px 1px hsl(184,80%,15%),-2px 1px 1px hsl(184,80%,15%),/*dark shadow*/2px 2px 2px hsl(184,80%,5%),1px 2px 2px hsl(184,80%,5%),0 2px 2px hsl(184,80%,5%),-1px 2px 2px hsl(184,80%,5%),-2px 2px 2px hsl(184,80%,5%)}
+				
+				.flicker{
+						   color:#6c4239; /*设置文字颜色*/
+						   font-weight:bolder; /*设置字体粗细*/
+						    -webkit-animation: flicker 3s infinite;    /*设置动画*/
+						}
+				@-webkit-keyframes flicker{                    
+					0%{
+						color:#6c4239;
+					}
+					25%{
+						opacity: 0.7;
+						color:#6c4239; 
+					}
+					50%{
+						color:#bb7c68; 
+					}
+					75%{
+						opacity: 0.7;
+						color:#6c4239; 
+					}
+					100%
+					{
+						color:#6c4239; 
+					}
+					}
+				
+				
+				/*---目录-----*/
+				.dialog{
+					width: 250px;
+					height: 250px;
+					margin: 40px 0 0 900px;
+					position: fixed;
+					text-align: left;
+					line-height: 30px;
+					background-color: white;
+				}
+				.dialog>ul{
+					margin-left: 15px;
+				}
+				.dialog>ul>li>a{
+					color: #443C36;
+				}
+				h1{
+					line-height: 80px;text-shadow: h-shadow v-shadow blur #153b4f;
+					-webkit-animation:bounce 2s 1;/*设置动画*/
+				}
+				
+				   
+				/*---底部-----*/
+			   .footer{
+				margin-left: 0;
+				height: 270px;
+				background: #bbd2b2;
+			   }
+			   .container{
+				   margin: 0 auto;
+				   display: flex;
+				   width: 1100px;
+			   }
+			   .image{
+				   margin: 50px auto;
+			   }
+			   .line{
+					float:left;
+					margin-top: 40px;
+					width:50px;
+					height: 200px;
+				   	border-right: 2px solid black;
+			   }
+			   .relative{
+				   width: 750px;
+				   font-size: 16px;
+				   line-height: 22px;
+				   letter-spacing: 0.7mm;
+				   margin-top: 30px;
+				   margin-left: 50px;
+				   color: #443C36;
+				   display:inline-block;
+				   font-weight:bold;
+				   -webkit-filter:url(#diff1);
+				   ilter:url(#diff1);
+			   }
+			  
+			   @-webkit-keyframes bounce{/*创建动画*/
+				  0%,100%,20%,50%,80%{
+				  -webkit-transform:translateY(0);
+				  }40%{
+				  -webkit-transform:translateY(-30px);
+				  }60%{
+				  -webkit-transform:translateY(-15px);
+				  }
+			</style>
+		</head>
+		<body>
+		
+		<div class="main">
+			<div class="header_1">
+				<div class="header" id="top">
+					<img src="static/picture/loge.png" height="80px"/>
+					<span id="abab">源自阿拉伯语“قهوة”（意思为“植物饮料”）</span>
+					<span><a class="" href="index.html">返回首页</a></span>
+				</div>
+			</div>
+			<div class="body_dialog">
+				<div class="body">
+				<br />
+					<h1 class="hcqFont hcqStyle1">咖啡的发展史</h1>
+					<hr><br />
+					<img src="static/picture/发展史.png" width="550px"/>
+					<div class="text">
+					<br />
+					<p>关于咖啡的起源，有这样一个较为流传的是这样一个故事：公元6世纪，一个埃塞俄比亚的牧羊人发现，他的羊群在食用了野生咖啡树上的果实之后就变的格外亢奋。出于好奇，他也尝了尝咖啡果。尝过之后，由于咖啡豆的作用，他也像那些乱撞乱跳的山羊一样，开始手舞足蹈起来。后来牧羊人采摘了一些咖啡果实给修道院的人们尝，因为当时修道士们在晚祷期间容易打瞌睡，因此咖啡就变成了修道士们的必备品，咖啡提神醒脑的作用也渐渐被大家所熟知。咖啡在世界范围内的流传由阿拉伯到欧洲咖啡逐渐在阿拉伯国家及穆斯林中普及开来，而其中，奥斯曼土耳其帝国对咖啡的传播史更是起到了非常大的作用，几乎形成了与宗教信仰同等地位的咖啡文化。</p>
+					
+					<p>在17世纪，随着奥斯曼土耳其帝国西征奥地利，开始有阿拉伯人把咖啡带入欧洲(也有历史学家，认为是威尼斯商人把咖啡从土耳其引进欧洲的第一站—意大利)。虽然最开始咖啡遭到了天主教徒欧洲人的抵触，甚至被称为“魔鬼的饮料”。据说当时的教皇在亲自品尝过咖啡之后，惊叹人间竟有如此美味的饮料，并为之特意安排了仪式进行洗礼，咖啡这才得到基督徒的广泛接受。</p>
+					
+					<p> 最重要的是，当时的欧洲正经历由体力劳动到脑力劳动的转变，因此有着提神醒脑功效的咖啡逐渐成为欧洲人的刚需品。智慧的欧洲人民为咖啡也增添了更多美味。第一台咖啡研磨机、第一家咖啡店，英文单词“coffee”的使用都开始出现。还有医生记录咖啡有益肠胃、并把它当做感冒药使用的历史。而牛奶咖啡的发明，也是源于一位法国医生首次把牛奶加进咖啡里，作为一种美味又营养的食物给病人饮用。</p>
+					
+					<p> 由欧洲到亚、美咖啡文化在欧洲兴起，使得荷兰、英国、法国、葡萄牙等国家开始在其殖民地大量种植咖啡树，由此咖啡也被引入亚洲、美洲等地。18世纪，波士顿爆发“茶叶事件”，当地人由喝茶转向喝咖啡，于是咖啡作为饮料，在美国得到普及。</p>
+					
+					<p>同时期，日本开始明治维新，大力学习西方文化及生活，以往不讨人喜欢的咖啡也开始慢慢被接受。尤其相比日本严肃的茶道，这种随意的咖啡馆文化和低廉的价格，赢得了越来越多年轻人的喜爱，咖啡文化开始在日本流行。</p>
+					
+					<p>咖啡进入中国，有记载，中国最早接触到咖啡的时间是在清朝中叶，由来华的外国人引入。至清末至民国，已有咖啡馆在各大城市普遍出现。《中国农业百科全书》中有记录，在19世纪左右，咖啡最先被引种到台湾，并相继引入海南、云南、广西等地种植。至今为止，中国种植咖啡规模最大、也最出名的也正是云南、海南和台湾这3个省份。</p>
+					
+					<p>随着咖啡饮用习惯、种植及咖啡馆在中国的传开，也逐渐形成了中国特有的咖啡饮食文化。尤其在20世纪80年代，雀巢登录中国，大牌企业多年的积累和教育，使得咖啡走进寻常百姓人家，而雀巢“速溶咖啡”也几乎成为了咖啡的代名词。</p>
+					
+					<p>   中国咖啡市场的兴起，拥有众多人口的中国无疑存在着巨大的消费潜力。进入21世纪以来，越来越多国内外咖啡品牌和咖啡馆在中国扩张。以星巴克为首的咖啡文化更是引领一股高端、时尚、小资的生活方式。习惯饮茶的中国人，尤其年轻的消费主力群体，对咖啡的包容度和接受性也尤为强烈。这也带动更多饮品企业不断突破创新，寻找差异化卖点，以从日益激烈的咖啡市场中脱颖而出。</p>
+					<br />
+				</div>
+			</div>
+			
+				<div class="dialog">
+					<hr style="border: none; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(141, 200, 140, 0.7), rgba(0, 0, 0, 0));" width="80%" align="center" SIZE=6>
+					<h2>文章目录</h2>
+					<ul>
+						<li><a href="development.html">咖啡发展史</a></li>
+						<li><a href="ingredient.html">咖啡的成分及作用</a></li>
+						<li><a href="types.html">咖啡的种类</a></li>
+						<li><a href="timetable.html">咖啡的饮用时间</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<div class="container" >
+						<div class="image">
+							<img src="static/picture/loge.png" height="150px">
+						</div>
+						<div class="line"></div>
+						<div class="relative">
+							<p>咖啡有一种让人无法抗拒的独特魅力</p>
+							<p>初闻起来味道很香</p>	
+							<p>入口却觉得苦涩中带着酸味</p>
+							<p>而泡沫的破灭和那一点点的苦涩又像是梦想与现实的冲突。</p>
+							<p>在品尝过生活的悲欢之后，生命的香醇回甘又让人陶醉......<span><a href="#top"><img src="static/image/top.png"/></a></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+			
+			
+			
+		</body>
+	</html>
