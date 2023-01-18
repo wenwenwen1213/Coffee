@@ -3,7 +3,311 @@
 	<head>
 		<meta charset="utf-8">
 		<title>咖啡的成分及作用</title>
-	</head>
-	<body>
-	</body>
-</html>
+	<style>
+				body{
+					margin: 0;
+					padding: 0;
+				}
+				a{ 
+					text-decoration: none;
+				}
+				img{
+					vertical-align:middle;/* 居中对齐 */
+				}
+				hr+h2{
+					text-align: center;
+				}
+				
+				
+				/*---网页开始-----*/
+				.main{
+					margin:0 auto;
+					height:auto;
+					overflow:hidden;
+					background:#fdfdfd;
+				}
+				
+				
+				/*---顶部-----*/
+				.header_1{
+					margin-left: 0;
+					height: 80px;
+					background: #bbd2b2;
+				}
+				.header{
+					width: 1300px;
+				}
+				.header>img{
+					margin-right: 20px;
+					margin-left: 10px;
+				}
+				.header>span>a{
+					color: #423b33;
+					font-size: 20px;
+				}
+				.header>span>a:hover{
+					color: #bbd2b2;
+					font-size: 20px;
+				}
+				#abab{
+					width: 300px;
+					color: #423b33;
+					font-size: 12px;
+					margin-right: 600px;
+				}
+				
+				
+				/*---主体-----*/
+				.body_dialog{
+					width: 1100px;
+					position: relative;
+					margin: 40px auto;
+					display:flex;
+					justify-content:space-between; 
+					
+				}
+				.body{
+					margin-top: 10px;
+					border: 5px solid #bbd2b2;
+					margin-right: 100px;
+					width: 800px;
+					text-align: center;
+					background-color: white;
+					font-style: normal;
+				}
+				.body>hr{
+					width: 80%;
+				}
+				.text{
+					width: 700px;
+					margin: 0 auto;
+				}
+				.benefit{
+					text-align: left;
+				}
+				.benefit>p{
+					text-indent:2em;
+				}
+				.bala{
+					text-indent:2em;
+					color:#6c4239;
+					font-size: 20px;
+					font-style: italic;
+				}
+				.hcqFont{position:relative;letter-spacing:.07em;height: 100px;font-size:3em;font-weight:normal;margin:0 auto}
+				.hcqFont:before,.hcqFont:after{position:absolute;top:0;left:0;right:0}
+				.hcqStyle1{color:hsl(-1, 0%, 100%);text-shadow:0 0 1px currentColor,/*highlight*/-1px -1px 1px hsl(-1, 0%, 100%),0 -1px 1px hsl(10, 47%, 32%),1px -1px 1px hsl(10, 47%, 32%),/*light shadow*/1px 1px 1px hsl(10, 47%, 32%),0 1px 1px hsl(184,80%,10%),-1px 1px 1px hsl(10, 47%, 32%),/*outline*/-2px -2px 1px hsl(10, 47%, 32%),-1px -2px 1px hsl(10, 47%, 32%),0 -2px 1px hsl(10, 47%, 32%),1px -2px 1px hsl(10, 47%, 32%),2px -2px 1px hsl(10, 47%, 32%),2px -1px 1px hsl(10, 47%, 32%),2px 0 1px hsl(184,80%,15%),2px 1px 1px hsl(184,80%,15%),-2px 0 1px hsl(184,80%,15%),-2px -1px 1px hsl(184,80%,15%),-2px 1px 1px hsl(184,80%,15%),/*dark shadow*/2px 2px 2px hsl(184,80%,5%),1px 2px 2px hsl(184,80%,5%),0 2px 2px hsl(184,80%,5%),-1px 2px 2px hsl(184,80%,5%),-2px 2px 2px hsl(184,80%,5%)}
+				    
+				.flicker{
+						   color:#6c4239; /*设置文字颜色*/
+						   font-weight:bolder; /*设置字体粗细*/
+						   font-size: 16px;
+						    -webkit-animation: flicker 3s infinite;    /*设置动画*/
+						}
+				@-webkit-keyframes flicker{                    
+					0%{
+						color:#6c4239;
+					}
+					25%{
+						opacity: 0.7;
+						color:#6c4239; 
+					}
+					50%{
+						color:#bb7c68; 
+					}
+					75%{
+						opacity: 0.7;
+						color:#6c4239; 
+					}
+					100%
+					{
+						color:#6c4239; 
+					}
+					}
+				
+				
+				/*---目录-----*/
+				.dialog{
+					width: 250px;
+					height: 250px;
+					margin: 40px 0 0 900px;
+					position: fixed;
+					text-align: left;
+					line-height: 30px;
+					background-color: white;
+				}
+				.dialog>ul{
+					margin-left: 15px;
+				}
+				.dialog>ul>li>a{
+					color: #443C36;
+				}
+				h1{
+					line-height: 80px;text-shadow: h-shadow v-shadow blur #153b4f;
+					-webkit-animation:bounce 2s 1;/*设置动画*/
+				}
+				
+				   
+				/*---底部-----*/
+			   .footer{
+				margin-left: 0;
+				height: 270px;
+				background: #bbd2b2;
+			   }
+			   .container{
+				   margin: 0 auto;
+				   display: flex;
+				   width: 1100px;
+			   }
+			   .image{
+				   margin: 50px auto;
+			   }
+			   .line{
+					float:left;
+					margin-top: 40px;
+					width:50px;
+					height: 200px;
+				   	border-right: 2px solid black;
+			   }
+			   .relative{
+				   width: 750px;
+				   font-size: 16px;
+				   line-height: 22px;
+				   letter-spacing: 0.7mm;
+				   margin-top: 30px;
+				   margin-left: 50px;
+				   color: #443C36;
+				   display:inline-block;
+				   font-weight:bold;
+				   -webkit-filter:url(#diff1);
+				   ilter:url(#diff1);
+			   }
+			  
+			   @-webkit-keyframes bounce{/*创建动画*/
+				  0%,100%,20%,50%,80%{
+				  -webkit-transform:translateY(0);
+				  }40%{
+				  -webkit-transform:translateY(-30px);
+				  }60%{
+				  -webkit-transform:translateY(-15px);
+				  }
+			</style>
+		</head>
+		<body>
+		
+		<div class="main">
+			<div class="header_1">
+				<div class="header" id="top">
+					<img src="static/picture/loge.png" height="80px"/>
+					<span id="abab">源自阿拉伯语“قهوة”（意思为“植物饮料”）</span>
+					<span><a class="" href="index.html">返回首页</a></span>
+				</div>
+			</div>
+			<div class="body_dialog">
+				<div class="body">
+					<br />
+					<h1 class="hcqFont hcqStyle1">咖啡的成分及作用</h1>
+					<hr />
+					<h2 >一、咖啡的成分</h2>
+					<img src="static/picture/咖啡成分.png" width="550px"/>
+					<div class="text">
+					<br /><br />
+					<p class="flicker">1、咖啡因</p>
+					<p>有特别强烈的苦味，刺激中枢神经系统、心脏和呼吸系统</p>
+					<p>适量的咖啡因亦可减轻肌肉疲劳，促进消化液分泌。</p>
+					<p>由于它会促进肾脏机能，有利尿作⽤，帮助体内将多余的钠离⼦排出体外。</p>
+					<p>但摄取过多会导致咖啡因中毒。</p>
+					<br /><br />
+					<p class="flicker">2、丹宁酸</p>
+					<p>煮沸后的丹宁酸会分解成焦梧酸，所以冲泡过久冷却后的咖啡味道会变差。</p>
+					<br /><br />
+					<p class="flicker">3、脂肪</p>
+					<p>其中最主要的是酸性脂肪及挥发性脂肪。</p>
+					<br /><br />
+					<p class="flicker">4、酸性脂肪</p>
+					<p>即脂肪中含有酸，其强弱会因咖啡种类不同而异。</p>
+					<br /><br />
+					<p class="flicker">5、挥发性脂肪</p>
+					<p>是咖啡香气主要来源，它是⼀种会散发出约四十种芬香的物质。</p>
+					<br /><br />
+					<p class="flicker">6、蛋⽩质</p>
+					<p>卡路里的主要来源，所占比例并不高。咖啡末的蛋白质在煮咖啡时，多半不会溶出来，所以摄取到的有限。</p>
+					<br /><br />
+					<p class="flicker">7、糖</p>
+					<p>咖啡生豆所含的糖分约8%，经过烘焙后⼤部分糖分会转化成焦糖，使咖啡形成褐色，并与丹宁酸互相结合产生甜味。</p>
+					<br /><br />
+					<p class="flicker">8、纤维</p>
+					<p>生豆的纤维烘焙后会炭化，与焦糖互相结合便形成咖啡的色调。<p>
+					<br /><br />
+					<p class="flicker">9、矿物质</p>
+					<p>含有少量石灰、铁质、磷、碳酸钠等。</p>
+					<br /><br />
+					<br /><br />
+					
+					
+					
+					<h2 >二、饮用咖啡的利弊</h2>
+					<img src="static/picture/作用.png" width="550px"/>
+					<br /><br />
+					<div class="benefit">
+					<p class="bala">好处</p>
+					<p class="flicker">1、消除疲劳</p>
+					<p>因为咖啡中含有咖啡因，对于上班族来说，在繁忙的工作之际，喝一杯咖啡能够提神醒脑，消除疲劳；具有保护大脑、增强情绪的作用。同时，咖啡还有利尿、解酒的好处；此外，研究显示，咖啡可能有助于防辐射的作用。</p>
+					<br /><br />
+					<p class="flicker">2、缓解便秘</p>
+					<p>因为咖啡可以刺激中枢神经系统，使人体新陈代谢加快，帮助脂肪分解、缓解便秘症状，且还有一定的减肥效果。对于偶尔排便不顺畅的患者来说，喝杯咖啡有助于通便。但需注意，不要加奶精和糖。</p>
+					<br /><br />
+					<p class="flicker">3、保护血管</p>
+					<p>因为咖啡中含有多酚类物质，同时也被称为黄酮类化合物，具有超强的抗氧化能力，还可保护心血管功能。此外，咖啡还有预防胆结石的好处；研究人员发现，每天喝2~3杯咖啡，患胆结石的几率比不喝咖啡的人要低40%左右。</p>
+					<br /><br />
+					
+					<p class="bala">坏处</p>
+					<p class="flicker">1、导致过敏</p>
+					<p>虽然适量喝咖啡，对我们的大脑是有好处的。但如果过量的话，则会使大脑产生兴奋，影响神经系统。并且咖啡喝得越多情绪就越容易激动。因此，要避免过量，以免引发过敏反应。此外，孕妇如果过量喝咖啡的话，会导致胎儿畸形甚至引发流产。</p>
+					<br /><br />
+					<p class="flicker">2、导致失眠</p>
+					<p>因为咖啡中含有咖啡因，且咖啡因具有兴奋的作用。如果摄入过多的话，就会对神经系统造成很大的影响。尤其是晚上会让人有烦躁不安的情绪，进而影响睡眠质量。同时，还可能会引发心血管疾病及高血压、冠心病、动脉硬化等疾病。</p>
+					<br /><br />
+					<p class="flicker">3、骨质疏松</p>
+					<p>因为咖啡本身是具有很好的利尿效果的，但如果长期且大量饮用咖啡的话，则很容易造成骨质流失，对骨量的保存是很不利的。尤其是绝经期的女性，对钙质的流失会更加明显。因此，应避免长期过量喝咖啡。</p>
+					<br /><br />
+					<br /><br />
+					</div></div>
+				</div>
+			
+			
+				<div class="dialog">
+					<hr style="border: none; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(141, 200, 140, 0.7), rgba(0, 0, 0, 0));" width="80%" align="center" SIZE=6>
+					<h2>文章目录</h2>
+					<ul>
+						<li><a href="development.html">咖啡发展史</a></li>
+						<li><a href="ingredient.html">咖啡的成分及作用</a></li>
+						<li><a href="types.html">咖啡的种类</a></li>
+						<li><a href="timetable.html">咖啡的饮用时间</a></li>
+					</ul>
+				</div>
+			</div>	
+			
+			<div class="footer">
+				<div class="container" >
+						<div class="image">
+							<img src="static/picture/loge.png" height="150px">
+						</div>
+						<div class="line"></div>
+						<div class="relative">
+							<p>咖啡有一种让人无法抗拒的独特魅力</p>
+							<p>初闻起来味道很香</p>	
+							<p>入口却觉得苦涩中带着酸味</p>
+							<p>而泡沫的破灭和那一点点的苦涩又像是梦想与现实的冲突。</p>
+							<p>在品尝过生活的悲欢之后，生命的香醇回甘又让人陶醉......<span><a href="#top"><img src="static/image/top.png"/></a></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+			
+			
+			
+		</body>
+	</html>
