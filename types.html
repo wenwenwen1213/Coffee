@@ -146,16 +146,25 @@
 				.zi{
 					text-align: end;
 				}
-				#baba{
+				.bounce{
 					position: absolute;
+					font-style: italic;
 					left: 50%;
 					margin-left: -150px;
-					background-image: -webkit-linear-gradient(left,#ffdc89,#bb7c68 10%,#993e11 20%,#6c4239 30%, #a4cecb 40%,#d7d9ff 50%,#993e11 60%,#6c4239 70%,#bb7c68 80%,#ffdc89 90%,#ff5500 100%);
+					background-image: -webkit-linear-gradient(left,#ffdc89,#bb7c68 10%,#993e11 20%,#6c4239 30%, #a4cecb 40%,#d7d9ff 50%,#993e11 60%,#6c4239 70%,#bb7c68 80%,#ffdc89 90%,#ff5500);
 					-webkit-text-fill-color: transparent;
 					-webkit-background-clip: text;
 					-webkit-background-size: 200% 100%; 
-					-webkit-animation: masked-animation 4s linear infinite;
-					
+					-webkit-animation: masked-animation 4s infinite linear;
+				}
+				@keyframes maskedAnimation {
+				 0% {
+				  background-position: 0 0;
+				 }
+				 
+				 100% {
+				  background-position: -100% 0;
+				 }
 				}
 			  
 			   .footer{
@@ -175,7 +184,7 @@
 					float:left;
 					margin-top: 40px;
 					width:50px;
-					height: 200px;
+					height: 220px;
 				   	border-right: 2px solid black;
 			   }
 			   .relative{
@@ -208,7 +217,7 @@
 			<div class="header_1">
 				<div class="header" id="top">
 					<img src="static/picture/loge.png" height="80px"/>
-					<span id="abab">源自阿拉伯语“قهوة”（意思为“植物饮料”）</span>
+					<span id="abab">源自阿拉伯语“قهوة”（意为“植物饮料”）</span>
 					<span><a class="" href="index.html">返回首页</a></span>
 				</div>
 			</div>
@@ -219,16 +228,17 @@
 					<hr />
 					<br />
 					<div class="text">
-					<p>首先，上一张经典的咖啡结构图：</p>
-					<img src="static/picture/咖啡科普.png" height="400px"/>
+					<p>首先，上一张经典的咖啡结构图：</p><br />
+					<img src="static/picture/咖啡科普.jpg" height="400px"/>
+					<br /><br /><hr /><br />
 					<h3><p>1、意式浓缩（Espresso）：</p>
 					<p class="zi">————最浓的咖啡，量少劲儿大，苦味很重，提神效果超棒</h3>
 					<p>意式浓缩咖啡是所有常见咖啡种类中，口味最为浓郁的。</p>
 					<p>它最早起源于意大利，一般被用作其他咖啡，如拿铁，卡布奇诺等的基底。意式浓缩是由咖啡机直接打出来的，用90℃左右的水，借助高压冲过研磨过的咖啡粉后流出的咖啡液。一般以“shot”作为单位，汉语可以称之为“份”。</p>
 					<p>一份意式浓缩的量很少，通常只有一小杯，一口就能喝掉！但是由于水分含量很低，因此咖啡浓度极高，口味浓烈，色泽也十分浓稠。</p>
 					<br />
-					<img src="static/picture/意式浓缩.png" height="400px"/>
-					<br /><br /><br /><hr><br /><br />
+					<img src="static/picture/意式浓缩.jpg" height="450px"/>
+					<br /><hr><br /><br />
 					
 					<h3><p>2、拿铁咖啡（Coffee Latte）：</p>
 					<p class="zi">————意式浓缩加上牛奶，有很浓的奶香味，早餐优选。</h3>
@@ -237,7 +247,7 @@
 					<p>如果有机会去意大利旅游，那么在当地的咖啡馆点拿铁，一定要说出全名（Caffè Latte），不然若你只说Latte，咖啡师真的会给你端上一杯牛奶哦！所以如果你觉得星巴克的拿铁味道淡的话，不妨告诉咖啡师：加一份浓缩，这样口味就会浓郁一些了。</p>
 					<br />
 					<img src="static/picture/拿铁咖啡.png" height="400px"/>
-					<br /><br /><br /><hr><br /><br />
+					<br /><br /><hr><br /><br />
 					
 					<h3><p>3、卡布奇诺（Cappuccino）：</p>
 					<p class="zi">————意式浓缩加厚厚的奶沫，绵密柔滑。</p></h3>
@@ -250,8 +260,8 @@
 					<p>传统的卡布奇诺咖啡是三分之一浓缩咖啡，三分之一蒸汽牛奶和三分之一泡沫牛奶。特浓咖啡的浓郁口味，配以润滑的奶泡；颇有一些汲精敛露的意味。撒上了肉桂粉的起沫牛奶，混以自下而上的意大利咖啡的香气，咖啡族为此而心动不已。</p>
 					<p>它有一种让人无法抗拒的独特魅力，起初闻起来时味道很香，第一口喝下去时，可以感觉到大量奶泡的香甜和酥软，第二口可以真正品尝到咖啡豆原有的苦涩和浓郁，最后当味道停留在口中，你又会觉得多了一份香醇和隽永……</p>
 					<p>玛奇朵（Macchiatto）甜蜜的印记玛奇朵Macchiatto在意大利文里是“印记、烙印”的意思。顾名思义，它的名字焦糖玛奇朵就象征着甜蜜的印记。</p>
-					<p id="baba" style="font-style: italic;" >香醇浓烈的爱尔兰咖啡，适合思念心情的咖啡。</p>
-					<br /><br /><br /><hr><br /><br />
+					<p class="bounce" >香醇浓烈的爱尔兰咖啡，适合思念心情的咖啡。</p>
+					<br /><br /><hr><br /><br />
 					
 					<h3><p>4、美式咖啡（Americano）：</p>
 					<p class="zi">————意式浓缩加水，较苦，不过有减肥的功效！</p></h3>
@@ -269,28 +279,28 @@
 					<p>这里还要说一下，马兰西亚有一款速溶咖啡也叫做“白咖啡”，不过它和Flat White可是不一样的！</p>
 					<br />
 					<img src="static/picture/澳白.png" height="400px"/>
-					<br /><br /><br /><hr><br /><br />
+					<br /><br /><hr><br /><br />
 					
 					<h3><p>6、焦糖玛奇朵（Caramel Macchiato）：</p>
 					<p class="zi">————咖啡中加入了香草味糖浆和焦糖酱，喜欢喝甜的不要放过！</p></h3>
 					<p>浓缩咖啡基底中混合了香草味的调味糖浆，再加入蒸煮过的热牛奶和奶泡，最后在上面淋上焦糖酱，无论味道还是颜值都相当高。焦糖玛奇朵是比较好喝的一款咖啡，味道甜甜的，不过含糖量较高，减肥人士少喝。</p>
 					<br />
 					<img src="static/picture/焦糖玛奇朵.png" width="550px"/>
-					<br /><br /><br /><hr><br /><br />
+					<br /><br /><hr><br /><br />
 					
 					<h3><p>7、康宝蓝（Espresso Con Panna）：</p>
 					<p class="zi">————咖啡加上鲜奶油，口感不错不过热量略高</p></h3>
 					<p>康宝蓝是在浓缩咖啡顶部打上鲜奶油，Panna在意大利语中的意思就是奶油，Con是“和”的意思，所以翻译成中文就是“浓缩 和 奶油”。外形很好看，仿佛冰淇淋一般，不过奶油的热量是很高的，所以减肥人士最好别碰它。</p>
 					<br />
 					<img src="static/picture/康宝蓝.png" width="550px"/>
-					<br /><br /><br /><hr><br /><br />
+					<br /><br /><hr><br /><br />
 					
 					<h3><p>8、摩卡咖啡（Cafe Mocha）：</p>
 					<p class="zi">————巧克力味道的咖啡，好喝但是热量最高！</p></h3>
 					<p>摩卡集合了咖啡、牛奶、鲜奶油、巧克力于一身，口感顺滑且味道丰富，如果你喜欢巧克力的味道，那么摩卡一定会充分满足你的味蕾！而且摩卡层次感强烈，在颜值上也俘获了许多女性的芳心。不过，学霸君要提醒小伙伴，这个集合了奶油与巧克力的摩卡，它的卡路里可是超级高！</p>
 					<br />
 					<img src="static/picture/摩卡咖啡.png" width="550px"/>
-					<br /><br /><br /><hr><br /><br />
+					<br /><br /><hr><br /><br />
 					
 					<h3><p>9、冷萃咖啡（Cold Brew Coffee）：</p>
 					<p class="zi">————超长时间慢速萃取，口感顺滑，时尚又有品位！</p></h3>
@@ -320,6 +330,7 @@
 				<div class="container" >
 						<div class="image">
 							<img src="static/picture/loge.png" height="150px">
+							<p style="text-align: center;">———— 敲代码:清蒸 —— 文案:两只鹅 —— 图片:恐龙————</p>
 						</div>
 						<div class="line"></div>
 						<div class="relative">

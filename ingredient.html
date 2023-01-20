@@ -88,11 +88,27 @@
 				.benefit>p{
 					text-indent:2em;
 				}
-				.bala{
-					text-indent:2em;
-					color:#6c4239;
-					font-size: 20px;
+				.line_m{
+					color:#5a362f;
+					font-size: 16px;
 					font-style: italic;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				.line_m:before{
+					background: #000000;
+					content: "";
+					left: 5px;
+					height: 1px;
+					width: 40%;
+				}
+				.line_m:after {
+					background: #000000;
+					content: "";
+					right: 5px;
+					height: 1px;
+					width: 40%;
 				}
 				.hcqFont{position:relative;letter-spacing:.07em;height: 100px;font-size:3em;font-weight:normal;margin:0 auto}
 				.hcqFont:before,.hcqFont:after{position:absolute;top:0;left:0;right:0}
@@ -199,7 +215,7 @@
 			<div class="header_1">
 				<div class="header" id="top">
 					<img src="static/picture/loge.png" height="80px"/>
-					<span id="abab">源自阿拉伯语“قهوة”（意思为“植物饮料”）</span>
+					<span id="abab">源自阿拉伯语“قهوة”（意为“植物饮料”）</span>
 					<span><a class="" href="index.html">返回首页</a></span>
 				</div>
 			</div>
@@ -244,13 +260,12 @@
 					<br /><br />
 					<br /><br />
 					
-					
-					
 					<h2 >二、饮用咖啡的利弊</h2>
+					<br />
 					<img src="static/picture/作用.png" width="550px"/>
-					<br /><br />
+					<br /><br /><br />
 					<div class="benefit">
-					<p class="bala">好处</p>
+					<div class="line_m"><p>好处</p></div><br />
 					<p class="flicker">1、消除疲劳</p>
 					<p>因为咖啡中含有咖啡因，对于上班族来说，在繁忙的工作之际，喝一杯咖啡能够提神醒脑，消除疲劳；具有保护大脑、增强情绪的作用。同时，咖啡还有利尿、解酒的好处；此外，研究显示，咖啡可能有助于防辐射的作用。</p>
 					<br /><br />
@@ -260,8 +275,8 @@
 					<p class="flicker">3、保护血管</p>
 					<p>因为咖啡中含有多酚类物质，同时也被称为黄酮类化合物，具有超强的抗氧化能力，还可保护心血管功能。此外，咖啡还有预防胆结石的好处；研究人员发现，每天喝2~3杯咖啡，患胆结石的几率比不喝咖啡的人要低40%左右。</p>
 					<br /><br />
-					
-					<p class="bala">坏处</p>
+				
+					<div class="line_m"><p>坏处</p></div><br />
 					<p class="flicker">1、导致过敏</p>
 					<p>虽然适量喝咖啡，对我们的大脑是有好处的。但如果过量的话，则会使大脑产生兴奋，影响神经系统。并且咖啡喝得越多情绪就越容易激动。因此，要避免过量，以免引发过敏反应。此外，孕妇如果过量喝咖啡的话，会导致胎儿畸形甚至引发流产。</p>
 					<br /><br />
@@ -292,6 +307,7 @@
 				<div class="container" >
 						<div class="image">
 							<img src="static/picture/loge.png" height="150px">
+							<p style="text-align: center;">———— 敲代码:清蒸 —— 文案:两只鹅 —— 图片:恐龙————</p>
 						</div>
 						<div class="line"></div>
 						<div class="relative">
